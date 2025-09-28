@@ -1,37 +1,168 @@
-<!DOCTYPE html>
+<!-- index.html -->
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to My Website</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Nitin — Computer Science Student</title>
+  <meta name="description" content="Nitin — Computer Science student. Resume, skills, and portfolio." />
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <h1>Welcome to My Website</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section id="about">
-            <h2>About Us</h2>
-            <p>This is a brief introduction about the website or organization.</p>
-        </section>
-        <section id="services">
-            <h2>Our Services</h2>
-            <p>Details about the services offered can go here.</p>
-        </section>
-        <section id="contact">
-            <h2>Contact Us</h2>
-            <p>Feel free to reach out via email or phone.</p>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2025 My Website. All rights reserved.</p>
-    </footer>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#">Nitin</a>
+      <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+        <a class="cta" href="#resume">Resume</a>
+      </nav>
+      <button class="burger" aria-label="Menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section id="hero" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-left">
+          <h1>Hi — I'm <span>Nitin</span></h1>
+          <p class="lead">A Computer Science student building elegant software, learning fast, and crafting projects that solve problems.<br>
+          I love algorithms, web development and machine learning.</p>
+
+          <div class="hero-actions">
+            <a class="btn-primary" href="#portfolio">See my work</a>
+            <a class="btn-outline" href="#contact">Contact me</a>
+          </div>
+
+          <ul class="quick-stats">
+            <li><strong>8</strong><span>Subjects left</span></li>
+            <li><strong>5+</strong><span>Projects</span></li>
+            <li><strong>3</strong><span>Languages</span></li>
+          </ul>
+        </div>
+
+        <div class="hero-right">
+          <!-- Put your photograph in the project root as `photo.jpg` or update the path below -->
+          <div class="photo-ring">
+            <img src="photo.jpg" alt="Nitin's photo" class="portrait">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section container about">
+      <h2>About me</h2>
+      <p>I am a computer science student passionate about building web apps, experimenting with machine learning, and writing clean code. Currently focused on finishing my coursework and polishing projects to showcase.</p>
+      <div class="cards">
+        <article class="card">
+          <h3>Education</h3>
+          <p>B.Sc. / B.Tech — Computer Science (in progress)</p>
+        </article>
+        <article class="card">
+          <h3>Interests</h3>
+          <p>Algorithms, Full‑stack web, ML, Open-source</p>
+        </article>
+        <article class="card">
+          <h3>Tools</h3>
+          <p>Python, JavaScript, Git, React, Flask</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="skills" class="section container skills">
+      <h2>Skills</h2>
+      <div class="skill-grid">
+        <div class="skill">
+          <h4>Programming</h4>
+          <div class="meter"><span style="--value:85%">85%</span></div>
+        </div>
+        <div class="skill">
+          <h4>Web Development</h4>
+          <div class="meter"><span style="--value:80%">80%</span></div>
+        </div>
+        <div class="skill">
+          <h4>Data Structures</h4>
+          <div class="meter"><span style="--value:90%">90%</span></div>
+        </div>
+        <div class="skill">
+          <h4>Machine Learning</h4>
+          <div class="meter"><span style="--value:60%">60%</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="portfolio" class="section container portfolio">
+      <h2>Selected projects</h2>
+      <div class="projects">
+        <article class="project-card">
+          <h3>Project One — Notes App</h3>
+          <p>A responsive notes web app with offline support and a clean UI.</p>
+          <a href="#" class="proj-link">View repo</a>
+        </article>
+        <article class="project-card">
+          <h3>Project Two — Mini Search</h3>
+          <p>A small search engine for personal documents using simple ranking heuristics.</p>
+          <a href="#" class="proj-link">View repo</a>
+        </article>
+        <article class="project-card">
+          <h3>Project Three — Visualizer</h3>
+          <p>Algorithm visualizer built to explain sorting and graph traversal animations.</p>
+          <a href="#" class="proj-link">View demo</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="resume" class="section container resume">
+      <h2>Resume</h2>
+      <p>Download a concise PDF version of my resume.</p>
+      <a class="btn-primary" href="resume.pdf" download>Download Resume</a>
+    </section>
+
+    <section id="contact" class="section container contact">
+      <h2>Contact</h2>
+      <p>Want to collaborate, see code, or ask a question? Drop a note.</p>
+      <form class="contact-form" action="#" onsubmit="alert('This is a demo form — replace with your backend.') ; return false;">
+        <div class="form-row">
+          <input type="text" name="name" placeholder="Your name" required>
+          <input type="email" name="email" placeholder="Your email" required>
+        </div>
+        <textarea name="message" rows="5" placeholder="Message" required></textarea>
+        <button class="btn-primary" type="submit">Send message</button>
+      </form>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Nitin — Computer Science Student</p>
+      <div class="social">
+        <a href="#">GitHub</a>
+        <a href="#">LinkedIn</a>
+        <a href="#">Twitter</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Small interactive bits
+    document.getElementById('year').textContent = new Date().getFullYear();
+    const burger = document.querySelector('.burger');
+    const nav = document.querySelector('.nav');
+    burger.addEventListener('click', () => {
+      const expanded = burger.getAttribute('aria-expanded') === 'true';
+      burger.setAttribute('aria-expanded', String(!expanded));
+      nav.classList.toggle('nav-open');
+    });
+  </script>
 </body>
 </html>
