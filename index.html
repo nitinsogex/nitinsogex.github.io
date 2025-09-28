@@ -1,168 +1,249 @@
-<!-- index.html -->
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Nitin — Computer Science Student</title>
-  <meta name="description" content="Nitin — Computer Science student. Resume, skills, and portfolio." />
-  <link rel="stylesheet" href="style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
-</head>
-<body>
-  <header class="site-header">
-    <div class="container header-inner">
-      <a class="logo" href="#">Nitin</a>
-      <nav class="nav">
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#portfolio">Portfolio</a>
-        <a href="#contact">Contact</a>
-        <a class="cta" href="#resume">Resume</a>
-      </nav>
-      <button class="burger" aria-label="Menu" aria-expanded="false">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <a href="#" class="logo">LOGO</a>
+      <div class="nav-items">
+        <a class="nav-link" href="#features">Features</a>
+        <a class="nav-link" href="#pricing">Pricing</a>
+        <a class="nav-link" href="#cta">Download</a>
+      </div>
+
+      <div class="menu-icon">
+        <img src="images/menu-icon.svg" alt="" />
+      </div>
+    </nav>
+
+    <div class="mobile-nav-menu">
+      <a class="nav-link" href="#features">Features</a>
+      <a class="nav-link" href="#pricing">Pricing</a>
+      <a class="nav-link" href="#cta">Download</a>
     </div>
-  </header>
 
-  <main>
-    <section id="hero" class="hero">
-      <div class="container hero-grid">
-        <div class="hero-left">
-          <h1>Hi — I'm <span>Nitin</span></h1>
-          <p class="lead">A Computer Science student building elegant software, learning fast, and crafting projects that solve problems.<br>
-          I love algorithms, web development and machine learning.</p>
+    <header>
+      <div class="container">
+        <div class="left">
+          <h1>Simplified Task Management</h1>
+          <p>
+            Streamline your productivity and stay organized with our powerful
+            task management app
+          </p>
 
-          <div class="hero-actions">
-            <a class="btn-primary" href="#portfolio">See my work</a>
-            <a class="btn-outline" href="#contact">Contact me</a>
+          <div class="buttons">
+            <a href="#" class="download-btn">
+              <div class="btn-icon">
+                <img src="images/appstore-logo.svg" alt="" />
+              </div>
+              <div class="btn-text">
+                <div>Get It On</div>
+                <div>App Store</div>
+              </div>
+            </a>
+
+            <a href="#" class="download-btn">
+              <div class="btn-icon">
+                <img src="images/google-play-icon.svg" alt="" />
+              </div>
+              <div class="btn-text">
+                <div>Download It On</div>
+                <div>Google Play</div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="right">
+          <img src="images/hero-image.png" alt="" />
+        </div>
+      </div>
+    </header>
+
+    <div class="container">
+      <section id="featured">
+        <h2>Featured on</h2>
+        <div class="content">
+          <div class="logos">
+            <img src="images/hubspot-logo.svg" alt="" />
+            <img src="images/pinterest-logo.svg" alt="" />
+            <img src="images/reddit-logo.svg" alt="" />
+            <img src="images/spotify-logo.svg" alt="" />
+          </div>
+        </div>
+      </section>
+
+      <section id="features">
+        <h2>Features</h2>
+        <div class="content">
+          <!-- <div class="feature-card">
+            <div class="icon">
+              <img src="images/create-task-icon.svg" alt="" />
+            </div>
+            <h3>Intuitive Task Creation</h3>
+            <p>
+              Easily create and manage tasks with a simple and user-friendly
+              interface.
+            </p>
+          </div> -->
+        </div>
+      </section>
+
+      <section id="testimonials">
+        <div class="content">
+          <div class="left">
+            <h2>What our customers say about the app</h2>
+            <p>There are already more than 100k+ customers using our app.</p>
           </div>
 
-          <ul class="quick-stats">
-            <li><strong>8</strong><span>Subjects left</span></li>
-            <li><strong>5+</strong><span>Projects</span></li>
-            <li><strong>3</strong><span>Languages</span></li>
-          </ul>
+          <div class="right">
+            <div class="testimonial-card">
+              <span class="quote-icon">
+                <img src="images/quote-icon.svg" alt="" />
+              </span>
+
+              <p class="review">
+                Since I started using the app, my productivity has skyrocketed.
+                The reminder feature keeps me on track. Highly recommended!
+              </p>
+
+              <div class="reviewer-info">
+                <div class="image">
+                  <img src="images/testimonial1.png" alt="" />
+                </div>
+
+                <div class="details">
+                  <div class="name">John Smith</div>
+                  <div class="designation">Tech Lead, Amazon</div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
 
-        <div class="hero-right">
-          <!-- Put your photograph in the project root as `photo.jpg` or update the path below -->
-          <div class="photo-ring">
-            <img src="photo.jpg" alt="Nitin's photo" class="portrait">
+        <div class="navigation-btns">
+          <div class="prev-btn">
+            <img src="images/chevron-left.svg" alt="" />
+          </div>
+          <div class="next-btn">
+            <img src="images/chevron-right.svg" alt="" />
+          </div>
+        </div>
+
+        <span class="bg-element"></span>
+      </section>
+
+      <section id="pricing">
+        <h2>Flexible Pricing Options</h2>
+        <div class="content">
+          <!-- <div class="plan">
+            <h4 class="plan-name">Basic</h4>
+            <ul class="plan-features">
+              <li>50 Tasks</li>
+              <li>Deadline Tracking</li>
+              <li>Priority Settings</li>
+              <li>Basic Reporting</li>
+              <li>Email Notifications</li>
+              <li>24/7 Customer Support</li>
+            </ul>
+            <div class="plan-price">Free</div>
+            <a href="#" class="btn">Choose</a>
+          </div> -->
+        </div>
+      </section>
+
+      <section id="cta">
+        <h2>Get Started Today</h2>
+        <div class="content">
+          <p>
+            Take control of your tasks and boost your productivity. Get started
+            today and experience the power of efficient task management
+          </p>
+
+          <div class="buttons">
+            <a href="#" class="download-btn">
+              <div class="btn-icon">
+                <img src="images/appstore-logo.svg" alt="" />
+              </div>
+              <div class="btn-text">
+                <div>Get It On</div>
+                <div>App Store</div>
+              </div>
+            </a>
+
+            <a href="#" class="download-btn">
+              <div class="btn-icon">
+                <img src="images/google-play-icon.svg" alt="" />
+              </div>
+              <div class="btn-text">
+                <div>Download It On</div>
+                <div>Google Play</div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <footer>
+      <div class="container">
+        <div class="content">
+          <div class="left">
+            <div class="logo">LOGO</div>
+            <p>Best Task Management App</p>
+          </div>
+
+          <div class="right">
+            <div class="links">
+              <h3>Quick Links</h3>
+              <ul>
+                <li>
+                  <a href="#">About Us</a>
+                </li>
+
+                <li>
+                  <a href="#">Privacy Policy</a>
+                </li>
+
+                <li>
+                  <a href="#">Terms & Conditions</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="links">
+              <h3>Contact Us</h3>
+              <ul>
+                <li>+1 (555) 123-4567</li>
+                <li>contact@example.com</li>
+                <li>123 Main Street, City, State, ZIP</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="copyright">
+          <p>Designed by Live Blogger © 2023</p>
+          <div class="socials">
+            <a href="#"><img src="images/facebook-logo.svg" alt="" /></a>
+            <a href="#"><img src="images/instagram-logo.svg" alt="" /></a>
+            <a href="#"><img src="images/twitter-logo.svg" alt="" /></a>
           </div>
         </div>
       </div>
-    </section>
+    </footer>
 
-    <section id="about" class="section container about">
-      <h2>About me</h2>
-      <p>I am a computer science student passionate about building web apps, experimenting with machine learning, and writing clean code. Currently focused on finishing my coursework and polishing projects to showcase.</p>
-      <div class="cards">
-        <article class="card">
-          <h3>Education</h3>
-          <p>B.Sc. / B.Tech — Computer Science (in progress)</p>
-        </article>
-        <article class="card">
-          <h3>Interests</h3>
-          <p>Algorithms, Full‑stack web, ML, Open-source</p>
-        </article>
-        <article class="card">
-          <h3>Tools</h3>
-          <p>Python, JavaScript, Git, React, Flask</p>
-        </article>
-      </div>
-    </section>
-
-    <section id="skills" class="section container skills">
-      <h2>Skills</h2>
-      <div class="skill-grid">
-        <div class="skill">
-          <h4>Programming</h4>
-          <div class="meter"><span style="--value:85%">85%</span></div>
-        </div>
-        <div class="skill">
-          <h4>Web Development</h4>
-          <div class="meter"><span style="--value:80%">80%</span></div>
-        </div>
-        <div class="skill">
-          <h4>Data Structures</h4>
-          <div class="meter"><span style="--value:90%">90%</span></div>
-        </div>
-        <div class="skill">
-          <h4>Machine Learning</h4>
-          <div class="meter"><span style="--value:60%">60%</span></div>
-        </div>
-      </div>
-    </section>
-
-    <section id="portfolio" class="section container portfolio">
-      <h2>Selected projects</h2>
-      <div class="projects">
-        <article class="project-card">
-          <h3>Project One — Notes App</h3>
-          <p>A responsive notes web app with offline support and a clean UI.</p>
-          <a href="#" class="proj-link">View repo</a>
-        </article>
-        <article class="project-card">
-          <h3>Project Two — Mini Search</h3>
-          <p>A small search engine for personal documents using simple ranking heuristics.</p>
-          <a href="#" class="proj-link">View repo</a>
-        </article>
-        <article class="project-card">
-          <h3>Project Three — Visualizer</h3>
-          <p>Algorithm visualizer built to explain sorting and graph traversal animations.</p>
-          <a href="#" class="proj-link">View demo</a>
-        </article>
-      </div>
-    </section>
-
-    <section id="resume" class="section container resume">
-      <h2>Resume</h2>
-      <p>Download a concise PDF version of my resume.</p>
-      <a class="btn-primary" href="resume.pdf" download>Download Resume</a>
-    </section>
-
-    <section id="contact" class="section container contact">
-      <h2>Contact</h2>
-      <p>Want to collaborate, see code, or ask a question? Drop a note.</p>
-      <form class="contact-form" action="#" onsubmit="alert('This is a demo form — replace with your backend.') ; return false;">
-        <div class="form-row">
-          <input type="text" name="name" placeholder="Your name" required>
-          <input type="email" name="email" placeholder="Your email" required>
-        </div>
-        <textarea name="message" rows="5" placeholder="Message" required></textarea>
-        <button class="btn-primary" type="submit">Send message</button>
-      </form>
-    </section>
-
-  </main>
-
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <p>© <span id="year"></span> Nitin — Computer Science Student</p>
-      <div class="social">
-        <a href="#">GitHub</a>
-        <a href="#">LinkedIn</a>
-        <a href="#">Twitter</a>
-      </div>
-    </div>
-  </footer>
-
-  <script>
-    // Small interactive bits
-    document.getElementById('year').textContent = new Date().getFullYear();
-    const burger = document.querySelector('.burger');
-    const nav = document.querySelector('.nav');
-    burger.addEventListener('click', () => {
-      const expanded = burger.getAttribute('aria-expanded') === 'true';
-      burger.setAttribute('aria-expanded', String(!expanded));
-      nav.classList.toggle('nav-open');
-    });
-  </script>
-</body>
+    <script src="main.js"></script>
+  </body>
 </html>
