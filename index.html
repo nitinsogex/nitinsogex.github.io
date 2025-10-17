@@ -1,249 +1,236 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Welcome</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;800&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <nav>
-      <a href="#" class="logo">LOGO</a>
-      <div class="nav-items">
-        <a class="nav-link" href="#features">Features</a>
-        <a class="nav-link" href="#pricing">Pricing</a>
-        <a class="nav-link" href="#cta">Download</a>
-      </div>
 
-      <div class="menu-icon">
-        <img src="images/menu-icon.svg" alt="" />
-      </div>
-    </nav>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nitin Soge</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
 
-    <div class="mobile-nav-menu">
-      <a class="nav-link" href="#features">Features</a>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <nav>
+    <a href="#" class="logo">Nitin's Portfolio</a>
+    <div class="nav-items">
+      <a class="nav-link" href="#skills">Skills</a>
       <a class="nav-link" href="#pricing">Pricing</a>
       <a class="nav-link" href="#cta">Download</a>
     </div>
+    <button class="menu-btn" aria-label="Open menu" aria-expanded="false" aria-controls="menu">
+      <img src="images/menu-icon.svg" alt="Menu" />
+    </button>
+  </nav>
 
+  <div id="menu" class="mobile-nav-menu" aria-hidden="true">
+    <a class="nav-link" href="#skills">Skills</a>
+    <a class="nav-link" href="#pricing">Pricing</a>
+    <a class="nav-link" href="#cta">Download</a>
+  </div>
+
+  <main id="main-content">
     <header>
       <div class="container">
         <div class="left">
-          <h1>Hi, I'm Nitin Soge<br>Let’s Build Something Great Together</h1>
+          <h1>Hi, I'm Nitin Soge<br />Let’s Build Something Great Together</h1>
           <p>
-            Streamline your productivity and stay organized with our powerful
-            task management app
+            Let's go and build something great together. I'm excited to
+            collaborate and create amazing projects with you.
           </p>
 
           <div class="buttons">
             <a href="#" class="download-btn">
               <div class="btn-icon">
-                <img src="images/appstore-logo.svg" alt="" />
+                <img src="dwd.png" alt="Download icon" loading="lazy" />
               </div>
               <div class="btn-text">
-                <div>Get It On</div>
-                <div>App Store</div>
+                <div>Resume</div>
+                <div>Download</div>
               </div>
             </a>
 
             <a href="#" class="download-btn">
               <div class="btn-icon">
-                <img src="images/google-play-icon.svg" alt="" />
+                <img src="contact.png" alt="Connect icon" loading="lazy" />
               </div>
               <div class="btn-text">
-                <div>Download It On</div>
-                <div>Google Play</div>
+                <div>Connect</div>
+                <div>With Me</div>
               </div>
             </a>
           </div>
         </div>
 
         <div class="right">
-          <img src="https://res.cloudinary.com/dofanfwkb/image/upload/v1759136041/Gemini_Generated_Image_fv3yvcfv3yvcfv3y-removebg-preview_pnhene.png" alt="" />
+          <img src="ban.png" alt="Hero banner" height="400" width="400" loading="lazy" />
         </div>
       </div>
     </header>
 
-    <div class="container">
-      <section id="featured">
-        <h2>Featured on</h2>
-        <div class="content">
-          <div class="logos">
-            <img src="images/hubspot-logo.svg" alt="" />
-            <img src="images/pinterest-logo.svg" alt="" />
-            <img src="images/reddit-logo.svg" alt="" />
-            <img src="images/spotify-logo.svg" alt="" />
-          </div>
-        </div>
-      </section>
-
-      <section id="features">
-        <h2>Features</h2>
-        <div class="content">
-          <!-- <div class="feature-card">
-            <div class="icon">
-              <img src="images/create-task-icon.svg" alt="" />
-            </div>
-            <h3>Intuitive Task Creation</h3>
-            <p>
-              Easily create and manage tasks with a simple and user-friendly
-              interface.
-            </p>
-          </div> -->
-        </div>
-      </section>
-
-      <section id="testimonials">
-        <div class="content">
-          <div class="left">
-            <h2>What our customers say about the app</h2>
-            <p>There are already more than 100k+ customers using our app.</p>
-          </div>
-
-          <div class="right">
-            <div class="testimonial-card">
-              <span class="quote-icon">
-                <img src="images/quote-icon.svg" alt="" />
-              </span>
-
-              <p class="review">
-                Since I started using the app, my productivity has skyrocketed.
-                The reminder feature keeps me on track. Highly recommended!
-              </p>
-
-              <div class="reviewer-info">
-                <div class="image">
-                  <img src="images/testimonial1.png" alt="" />
-                </div>
-
-                <div class="details">
-                  <div class="name">John Smith</div>
-                  <div class="designation">Tech Lead, Amazon</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="navigation-btns">
-          <div class="prev-btn">
-            <img src="images/chevron-left.svg" alt="" />
-          </div>
-          <div class="next-btn">
-            <img src="images/chevron-right.svg" alt="" />
-          </div>
-        </div>
-
-        <span class="bg-element"></span>
-      </section>
-
-      <section id="pricing">
-        <h2>Flexible Pricing Options</h2>
-        <div class="content">
-          <!-- <div class="plan">
-            <h4 class="plan-name">Basic</h4>
-            <ul class="plan-features">
-              <li>50 Tasks</li>
-              <li>Deadline Tracking</li>
-              <li>Priority Settings</li>
-              <li>Basic Reporting</li>
-              <li>Email Notifications</li>
-              <li>24/7 Customer Support</li>
-            </ul>
-            <div class="plan-price">Free</div>
-            <a href="#" class="btn">Choose</a>
-          </div> -->
-        </div>
-      </section>
-
-      <section id="cta">
-        <h2>Get Started Today</h2>
-        <div class="content">
-          <p>
-            Take control of your tasks and boost your productivity. Get started
-            today and experience the power of efficient task management
-          </p>
-
-          <div class="buttons">
-            <a href="#" class="download-btn">
-              <div class="btn-icon">
-                <img src="images/appstore-logo.svg" alt="" />
-              </div>
-              <div class="btn-text">
-                <div>Get It On</div>
-                <div>App Store</div>
-              </div>
-            </a>
-
-            <a href="#" class="download-btn">
-              <div class="btn-icon">
-                <img src="images/google-play-icon.svg" alt="" />
-              </div>
-              <div class="btn-text">
-                <div>Download It On</div>
-                <div>Google Play</div>
-              </div>
-            </a>
-          </div>
-        </div>
-      </section>
-    </div>
-
-    <footer>
+    <section id="skills" class="section skills">
+      <h2 class="section-header"><b>My Skills</b></h2>
       <div class="container">
-        <div class="content">
-          <div class="left">
-            <div class="logo">LOGO</div>
-            <p>Best Task Management App</p>
-          </div>
+      <div class="skills-g">
+        <div class="skill">
+          <span class="text-4xl mb-4">🎨</span>
+          <h3>Frontend</h3>
+          <ul>
+            <li>HTML5, CSS3, Tailwind CSS</li>
+            <li>React, Vue.js</li>
+            <li>JavaScript (ES6+)</li>
+          </ul>
+        </div>
+        <div class="skill">
+          <span class="text-4xl mb-4">⚙️</span>
+          <h3>Backend</h3>
+          <ul>
+            <li>Node.js, Express.js</li>
+            <li>Python, Django</li>
+            <li>RESTful APIs, GraphQL</li>
+          </ul>
+        </div>
+        <div class="skill">
+          <span class="text-4xl mb-4">🗃️</span>
+          <h3>Databases</h3>
+          <ul>
+            <li>PostgreSQL, MySQL</li>
+            <li>MongoDB, Firebase Firestore</li>
+          </ul>
+        </div>
+        <div class="skill">
+          <span class="text-4xl mb-4">☁️</span>
+          <h3>Tools &amp; DevOps</h3>
+          <ul>
+            <li>Git, GitHub, Vercel</li>
+            <li>Docker, AWS S3</li>
+          </ul>
+        </div>
+      </div>
+      </div>
+    </section>
 
-          <div class="right">
-            <div class="links">
-              <h3>Quick Links</h3>
-              <ul>
-                <li>
-                  <a href="#">About Us</a>
-                </li>
+    <section id="projects" class="section proj">
+      <h2 class="section-header">Projects</h2>
+      <div class="container">
+      <div class="proj-grid">
 
-                <li>
-                  <a href="#">Privacy Policy</a>
-                </li>
-
-                <li>
-                  <a href="#">Terms & Conditions</a>
-                </li>
-              </ul>
+        <!-- Project Card 1 -->
+        <div class="card">
+          <img class="card-img"
+            src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&amp;w=1770&amp;auto=format&amp;fit=crop"
+            alt="Real-time Chat App thumbnail">
+          <div class="card-body">
+            <h3 class="card-title">Real-time Chat App</h3>
+            <p class="card-desc">
+              A fully-functional real-time chat application with group chats and user presence, built with a scalable
+              backend.
+            </p>
+            <div class="tags">
+              <span class="tag">React</span>
+              <span class="tag tag--dark">Node.js</span>
+              <span class="tag">Socket.io</span>
             </div>
-
-            <div class="links">
-              <h3>Contact Us</h3>
-              <ul>
-                <li>+1 (555) 123-4567</li>
-                <li>contact@example.com</li>
-                <li>123 Main Street, City, State, ZIP</li>
-              </ul>
+            <div class="actions">
+              <a href="https://example.com/demo1" target="_blank" class="btn btn--pri">Live Demo</a>
+              <a href="https://github.com/your-username/chat-app" target="_blank" class="btn btn--sec">View Code</a>
             </div>
           </div>
         </div>
 
-        <div class="copyright">
-          <p>Designed by Live Blogger © 2023</p>
-          <div class="socials">
-            <a href="#"><img src="images/facebook-logo.svg" alt="" /></a>
-            <a href="#"><img src="images/instagram-logo.svg" alt="" /></a>
-            <a href="#"><img src="images/twitter-logo.svg" alt="" /></a>
+        <!-- Project Card 2 -->
+        <div class="card">
+          <img class="card-img" src="download (3).jpg" alt="E-commerce Platform thumbnail">
+          <div class="card-body">
+            <h3 class="card-title">E-commerce Platform</h3>
+            <p class="card-desc">
+              A complete e-commerce solution with user authentication, a product catalog, and a secure payment process.
+            </p>
+            <div class="tags">
+              <span class="tag">Vue.js</span>
+              <span class="tag tag--dark">Django</span>
+              <span class="tag">PostgreSQL</span>
+            </div>
+            <div class="actions">
+              <a href="https://example.com/demo2" target="_blank" class="btn btn--pri">Live Demo</a>
+              <a href="https://github.com/your-username/ecommerce-site" target="_blank" class="btn btn--sec">View Code</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project Card 3 -->
+        <div class="card">
+          <img class="card-img"
+            src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&amp;w=1770&amp;auto=format&amp;fit=crop"
+            alt="Dev Blog CMS thumbnail">
+          <div class="card-body">
+            <h3 class="card-title">Dev Blog CMS</h3>
+            <p class="card-desc">
+              A content management system for a developer blog, complete with a markdown editor and user roles.
+            </p>
+            <div class="tags">
+              <span class="tag">React</span>
+              <span class="tag tag--dark">Express.js</span>
+              <span class="tag">MongoDB</span>
+            </div>
+            <div class="actions">
+              <a href="https://example.com/demo3" target="_blank" class="btn btn--pri">Live Demo</a>
+              <a href="https://github.com/your-username/blog-cms" target="_blank" class="btn btn--sec">View Code</a>
+            </div>
           </div>
         </div>
       </div>
-    </footer>
+      </div>
+    </section>
+  </main>
 
-    <script src="main.js"></script>
-  </body>
+  <footer>
+    <div class="container">
+      <div class="content">
+        <div class="left">
+          <div class="logo">Nitin's Portfolio</div>
+          <p>Let's build something great together.</p>
+        </div>
+
+        <div class="right">
+          <div class="links">
+            <h3><b>Quick Links</b></h3>
+            <ul>
+              <li>
+                <a href="#">About Me</a>
+              </li>
+
+              <!-- <li>
+                <a href="#">Contact Me</Menu></a>
+              </li> -->
+            </ul>
+          </div>
+
+          <div class="links">
+            <h3>Contact</h3>
+            <ul>
+              <li>contact@nitinsoge.dev</li>
+              <li>Parbhani, Maharashtra, 431401</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="copyright">
+        <p>© 2025 NITIN SOGE. All rights reserved</p>
+        <div class="socials">
+          <a href="#" aria-label="Facebook"><img src="images/facebook-logo.svg" alt="Facebook" loading="lazy" /></a>
+          <a href="#" aria-label="Instagram"><img src="images/instagram-logo.svg" alt="Instagram" loading="lazy" /></a>
+          <a href="#" aria-label="Twitter"><img src="images/twitter-logo.svg" alt="Twitter" loading="lazy" /></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js" defer></script>
+</body>
+
 </html>

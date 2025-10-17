@@ -117,12 +117,13 @@ const testimonialCard = document.querySelector(
 const prevBtn = document.querySelector("#testimonials .prev-btn");
 const nextBtn = document.querySelector("#testimonials .next-btn");
 const pricingContent = document.querySelector("#pricing .content");
-const menuIcon = document.querySelector(".menu-icon");
-const mobileNavMenu = document.querySelector(".mobile-nav-menu");
+const menuButton = document.querySelector(".menu-btn");
+const mobileNavMenu = document.querySelector("#menu");
 const navLinks = document.querySelectorAll(".nav-link");
 let currentTestimonialIndex = 0;
 
 const displayFeatures = () => {
+  if (!featuresContent) return;
   featuresList.forEach((f) => {
     const html = `<div class="icon">
         <img src="${f.icon}" alt="" />
@@ -143,6 +144,7 @@ const displayFeatures = () => {
 displayFeatures();
 
 const displayTestimonial = () => {
+  if (!testimonialCard) return;
   const html = `<span class="quote-icon">
   <img src="images/quote-icon.svg" alt="" />
 </span>
@@ -168,31 +170,36 @@ const displayTestimonial = () => {
 
 displayTestimonial();
 
-nextBtn.addEventListener("click", () => {
-  testimonialCard.classList.remove("active");
+if (nextBtn && testimonialCard) {
+  nextBtn.addEventListener("click", () => {
+    testimonialCard.classList.remove("active");
 
-  setTimeout(() => {
-    currentTestimonialIndex++;
-    if (currentTestimonialIndex >= testimonialsList.length) {
-      currentTestimonialIndex = 0;
-    }
-    displayTestimonial();
-  }, 200);
-});
+    setTimeout(() => {
+      currentTestimonialIndex++;
+      if (currentTestimonialIndex >= testimonialsList.length) {
+        currentTestimonialIndex = 0;
+      }
+      displayTestimonial();
+    }, 200);
+  });
+}
 
-prevBtn.addEventListener("click", () => {
-  testimonialCard.classList.remove("active");
+if (prevBtn && testimonialCard) {
+  prevBtn.addEventListener("click", () => {
+    testimonialCard.classList.remove("active");
 
-  setTimeout(() => {
-    currentTestimonialIndex--;
-    if (currentTestimonialIndex < 0) {
-      currentTestimonialIndex = testimonialsList.length - 1;
-    }
-    displayTestimonial();
-  }, 200);
-});
+    setTimeout(() => {
+      currentTestimonialIndex--;
+      if (currentTestimonialIndex < 0) {
+        currentTestimonialIndex = testimonialsList.length - 1;
+      }
+      displayTestimonial();
+    }, 200);
+  });
+}
 
 const displayPricing = () => {
+  if (!pricingContent) return;
   plans.forEach((p) => {
     const featuresHTML = p.features
       .map(
@@ -218,9 +225,13 @@ const displayPricing = () => {
 
 displayPricing();
 
-menuIcon.addEventListener("click", () => {
-  mobileNavMenu.classList.toggle("active");
-});
+if (menuButton && mobileNavMenu) {
+  menuButton.addEventListener("click", () => {
+    const isOpen = mobileNavMenu.classList.toggle("active");
+    menuButton.setAttribute("aria-expanded", isOpen ? "true" : "false");
+    mobileNavMenu.setAttribute("aria-hidden", isOpen ? "false" : "true");
+  });
+}
 
 navLinks.forEach((link) => {
   link.addEventListener("click", (e) => {
@@ -228,11 +239,14 @@ navLinks.forEach((link) => {
     const targetId = link.getAttribute("href");
     const targetElement = document.querySelector(targetId);
 
-    if (targetElement) {
-      const offset = targetElement.offsetTop - 60;
-      window.scrollTo({ top: offset });
+    if (targetElement && typeof targetElement.scrollIntoView === "function") {
+      targetElement.scrollIntoView({ behavior: "smooth", block: "start" });
     }
 
-    mobileNavMenu.classList.remove("active");
+    if (mobileNavMenu) {
+      mobileNavMenu.classList.remove("active");
+      menuButton?.setAttribute("aria-expanded", "false");
+      mobileNavMenu.setAttribute("aria-hidden", "true");
+    }
   });
 });
