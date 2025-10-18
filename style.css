@@ -982,6 +982,16 @@ header .left {
   max-width: 500px;
 }
 
+header .subtitle {
+  font-size: 25px;
+  line-height: 130%;
+  margin: 0;
+  background: linear-gradient(90deg, #230127 0%, #9e08fb 100%);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
 h1 {
   font-size: 50px;
   line-height: 130%;
@@ -1337,7 +1347,7 @@ nav .menu-btn,
   }
 
   body {
-    background: #fff;
+    background: #e3ffff;
   }
 
   nav {
@@ -1479,7 +1489,7 @@ nav .menu-btn,
     position: fixed;
     right: 32px;
     top: 100px;
-    background: #fff;
+    background: #e3ffff;
     display: flex;
     flex-direction: column;
     padding: 8px 16px;
@@ -1507,9 +1517,11 @@ nav .menu-btn,
 }
 
 .section .section-header {
+  font-size: 30px;
+  font-weight: bold;
   text-align: center;
   color: #8300b6;
-  margin-bottom: 24px;
+  margin-bottom: 50px;
 }
 
 .container {
@@ -1537,10 +1549,12 @@ nav .menu-btn,
 }
 
 .skill {
-  background: #e5e7eb; /* gray-200 */
+  background: #e5e7eb;
+  /* gray-200 */
   padding: 24px;
   border-radius: 12px;
-  border: 1px solid #d1d5db; /* gray-300 */
+  border: 1px solid #d1d5db;
+  /* gray-300 */
   box-shadow: 0 8px 16px -6px rgba(0, 0, 0, 0.1);
   text-align: center;
   display: flex;
@@ -1596,10 +1610,12 @@ nav .menu-btn,
 }
 
 .card {
-  background: #e2e8f0; /* slate-200 */
+  background: #e2e8f0;
+  /* slate-200 */
   border-radius: 12px;
-  border: 1px solid #cbd5e1; /* slate-300 */
-  box-shadow: 0 8px 16px -6px rgba(0,0,0,0.1);
+  border: 1px solid #cbd5e1;
+  /* slate-300 */
+  box-shadow: 0 8px 16px -6px rgba(0, 0, 0, 0.1);
   overflow: hidden;
 }
 
@@ -1644,7 +1660,7 @@ nav .menu-btn,
 }
 
 .tag--dark {
-  background: #1f2937;
+  background: rgb(128, 138, 152);
   color: #fff;
 }
 

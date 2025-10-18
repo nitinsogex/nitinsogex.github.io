@@ -250,3 +250,27 @@ navLinks.forEach((link) => {
     }
   });
 });
+
+// Typed.js init
+window.addEventListener("DOMContentLoaded", () => {
+  if (window.Typed) {
+    const target = document.querySelector("#typed");
+    if (target) {
+      new Typed("#typed", {
+        strings: [
+          "Learner",
+          "Python Developer",
+          "Java Programmer",
+        ],
+        typeSpeed: 50,
+        backSpeed: 30,
+        backDelay: 1200,
+        startDelay: 300,
+        loop: true,
+        smartBackspace: true,
+        showCursor: true,
+        cursorChar: "|",
+      });
+    }
+  }
+});
