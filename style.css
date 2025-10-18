@@ -1549,11 +1549,11 @@ nav .menu-btn,
 }
 
 .skill {
-  background: #e5e7eb;
+  background: #ffffff;
   /* gray-200 */
   padding: 24px;
   border-radius: 12px;
-  border: 1px solid #d1d5db;
+  border: 1px solid #000000;
   /* gray-300 */
   box-shadow: 0 8px 16px -6px rgba(0, 0, 0, 0.1);
   text-align: center;
@@ -1610,10 +1610,10 @@ nav .menu-btn,
 }
 
 .card {
-  background: #e2e8f0;
+  background: #ffffff;
   /* slate-200 */
   border-radius: 12px;
-  border: 1px solid #cbd5e1;
+  border: 1px solid #000000;
   /* slate-300 */
   box-shadow: 0 8px 16px -6px rgba(0, 0, 0, 0.1);
   overflow: hidden;
